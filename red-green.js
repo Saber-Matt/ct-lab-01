@@ -14,7 +14,18 @@ export function copyAndPush(arr, number) {
 
 export function capitalizeAndFilter(arr) {
 
-  // const newArr = ;
+  const newArr = [];
 
-  // return;
+  // eslint-disable-next-line keyword-spacing
+  for (const i of arr) {
+    // eslint-disable-next-line keyword-spacing
+    if ((i[0] !== 'f') && (i[0] !== 'F')) {
+      newArr.push(i.toUpperCase());
+      console.log(newArr);
+
+    }
+  }
+
+
+  return newArr;
 }

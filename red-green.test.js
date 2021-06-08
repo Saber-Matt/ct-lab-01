@@ -39,9 +39,9 @@ describe('takes an array of strings capitalize all strings and filter out any st
   it('capitalize first letter of each item of array and remove those that start with "f"', () => {
     const strings = ['potatoes', 'dragon fruit', 'flood plains', 'golf', 'Farquad', 'Appalachia'];
 
-    const expected = ['Potatoes', 'Dragon fruit', 'Golf', 'Appalachia'];
+    //const expected = ['POTATOES', 'DRAGON FRUIT', 'GOLF', 'APPALACHIA'];
     //const actual = strings;
 
-    expect(expected).toEqual();
+    expect(capitalizeAndFilter(strings)).toEqual(['POTATOES', 'DRAGON FRUIT', 'GOLF', 'APPALACHIA']);
   });
 });
