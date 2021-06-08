@@ -1,4 +1,4 @@
-export function getName() {
+export function getName(obj) {
 
-  return;
+  return obj['name'];
 }
