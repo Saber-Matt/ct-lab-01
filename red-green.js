@@ -1,4 +1,4 @@
 export function getName() {
 
-  return name;
-};
+  return;
+}

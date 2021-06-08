@@ -2,9 +2,10 @@ import { getName } from './red-green.js';
 
 describe('test suite', () => {
   it('gets the name value', () => {
-
+    expect
   });
 });
+
 
 
 const spot = { name: 'spot', age: 5, weight: '20 lbs' };
