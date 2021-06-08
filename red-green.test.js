@@ -1,4 +1,4 @@
-import { getName, copyAndPush } from './red-green.js';
+import { getName, copyAndPush, capitalizeAndFilter } from './red-green.js';
 
 const spot = { name: 'spot', age: 5, weight: '20 lbs' };
 getName(spot); // returns spot
@@ -8,7 +8,7 @@ getName(character); // returns Aang
 
 
 describe('test suite', () => {
-  it.skip('gets the name value', () => {
+  it('gets the name value', () => {
     const expected = 'spot';
 
     const actual = getName(spot);
@@ -18,15 +18,27 @@ describe('test suite', () => {
 });
 
 
-const numbers = [1, 2, 3];
-copyAndPush(numbers, 4); // return [1, 2, 3, 4];
+
 
 describe('add new number to array of numbers', () => {
   it('adds number to end of array', () => {
+    const numbers = [1, 2, 3];
+    // copyAndPush(numbers, 4); // return [1, 2, 3, 4];
+
     const expected = [1, 2, 3, 4];
 
     const actual = copyAndPush(numbers, 4);
 
     expect(expected).toEqual(actual);
+    // expect(numbers).toEqual([1, 2, 3]);
   });
+});
+
+describe('', () => {
+  //   it('', () => {
+  // const = ;
+
+  // const expected = ;
+  // const actual = ;
+  //   });
 });
