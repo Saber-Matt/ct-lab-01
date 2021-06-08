@@ -4,21 +4,17 @@ export function getName({ name }) {
 }
 
 export function copyAndPush(arr, number) {
-  // console.log(arr);
-  // const newArr = [...arr];
-  // newArr.push(number);
-  // console.log(newArr);
-  // return newArr;
+  return [...arr, number];
 
-  const copyArr = arr;
-  console.log(copyArr);
-  copyArr.push(number);
-  return copyArr;
+  // const copyArr = arr;
+  // console.log(copyArr);
+  // copyArr.push(number);
+  // return copyArr;
 }
 
-export function capitalizeAndFilter() {
+export function capitalizeAndFilter(arr) {
 
-  // const =;
+  // const newArr = ;
 
   // return;
 }

@@ -30,15 +30,18 @@ describe('add new number to array of numbers', () => {
     const actual = copyAndPush(numbers, 4);
 
     expect(expected).toEqual(actual);
-    // expect(numbers).toEqual([1, 2, 3]);
+    expect(numbers).toEqual([1, 2, 3]);
   });
 });
 
-describe('', () => {
-  //   it('', () => {
-  // const = ;
+describe('takes an array of strings capitalize all strings and filter out any string that starts with the letter F/f.', () => {
 
-  // const expected = ;
-  // const actual = ;
-  //   });
+  it('capitalize first letter of each item of array and remove those that start with "f"', () => {
+    const strings = ['potatoes', 'dragon fruit', 'flood plains', 'golf', 'Farquad', 'Appalachia'];
+
+    const expected = ['Potatoes', 'Dragon fruit', 'Golf', 'Appalachia'];
+    //const actual = strings;
+
+    expect(expected).toEqual();
+  });
 });
