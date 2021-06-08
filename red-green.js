@@ -1,5 +1,4 @@
-export function getName(obj) {
+export function getName({ name }) {
 
-  const { name } = obj;
   return name;
 }
