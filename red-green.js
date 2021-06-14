@@ -1,3 +1,4 @@
+import request from 'superagent';
 export function getName({ name }) {
 
   return name;
@@ -29,3 +30,13 @@ export function capitalizeAndFilter(arr) {
 
   return newArr;
 }
+
+export const fetchQuotes = () => {
+  return fetch('http://futuramaapi.herokuapp.com/api/quotes')
+    .then(response => response.jason())
+    .then(data => ({
+      name: data[0].character,
+      text: data[0].quote,
+      image: data[0].image
+    }));
+};
